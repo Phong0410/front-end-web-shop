@@ -1,0 +1,134 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #555;
+    --text-pale: #999;
+    --primary-color: #fa5330;
+    --primary-color-pale: rgba(250, 82, 48, 0.3);
+    --border-color: #dbdbdb;
+
+    --header-height: 120px;
+    --navbar-height: 40px;
+    --header-with-search-height: calc(
+        var(--header-height) - var(--navbar-height)
+    );
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    /* 1rem = 10px */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modal {
+    position: fixed;
+    display: flex;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    animation: fadeIn ease 0.3s;
+}
+
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.4;
+}
+
+.modal__body {
+    margin: auto;
+    position: relative;
+    z-index: 3;
+    animation: growUp ease 0.3s;
+    --grow-from: 70%;
+    --grow-to: 100%;
+}
+
+.btn {
+    height: 36px;
+    min-width: 140px;
+    color: var(--text-color);
+    background-color: var(--white-color);
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6rem;
+}
+
+.btn.btn--primary {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.btn.btn--disabled {
+    cursor: default;
+    color: #949494;
+    background-color: #c3c3c3;
+}
+
+.btn.btn--size-s {
+    height: 32px;
+    font-size: 12px;
+}
+
+.primary-color {
+    color: var(--primary-color) !important;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        top: 100%;
+    }
+    to {
+        top: calc(100% + 10px);
+    }
+}
+
+@keyframes growUp {
+    from {
+        transform: scale(var(--grow-from));
+    }
+    to {
+        transform: scale(var(--grow-to));
+    }
+}
