@@ -353,6 +353,11 @@
     border-left: 2px solid var(--border-color);
     margin: 0 8px;
 }
+.modal,
+.sign-up-modal,
+.sign-in-modal {
+    display: none;
+}
 
 .header-with-search {
     height: var(--header-with-search-height);
