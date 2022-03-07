@@ -152,7 +152,7 @@
                                     Trợ giúp
                                 </a>
                             </li>
-                            <li
+                            <!-- <li
                                 class="header__navbar-item header__navbar-item--separate"
                             >
                                 <a
@@ -169,6 +169,31 @@
                                 >
                                     Đăng nhập
                                 </a>
+                            </li> -->
+                            <li class="header__navbar-item header__navbar-user">
+                                <img
+                                    src="./assests/img/Photos.png"
+                                    alt="header__navbar-user-avatar"
+                                    class="header__navbar-user-avatar"
+                                />
+                                <span class="header__navbar-user-name">
+                                    Nguyễn Hồng Phong
+                                </span>
+
+                                <ul class="header__navbar-user-menu">
+                                    <li class="header__navbar-user-menu-item">
+                                        <a href="#">Tài khoản</a>
+                                    </li>
+                                    <li class="header__navbar-user-menu-item">
+                                        <a href="#">Địa chỉ</a>
+                                    </li>
+                                    <li class="header__navbar-user-menu-item">
+                                        <a href="#">Đơn mua</a>
+                                    </li>
+                                    <li class="header__navbar-user-menu-item">
+                                        <a href="#">Đăng xuất</a>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                     </nav>
@@ -236,6 +261,126 @@
                             <i
                                 class="fas fa-shopping-cart header__cart-icon"
                             ></i>
+                            <span class="header__cart-quantity">3</span>
+
+                            <!-- Cart list -->
+                            <div
+                                class="header__cart-list header__cart-list--not-empty"
+                            >
+                                <!-- Empty -->
+                                <img
+                                    src="./assests/img/empty-cart.png"
+                                    alt="Empty cart"
+                                    class="header__cart-empty-cart-img"
+                                />
+                                <p class="header__cart-empty-cart-text">
+                                    Chưa có sản phẩm
+                                </p>
+
+                                <!-- Not empty -->
+
+                                <h3 class="header__cart-heading">
+                                    Sản phẩm đã thêm
+                                </h3>
+                                <ul class="header__cart-list-item">
+                                    <!-- Cart items -->
+                                    <li class="header__cart-item">
+                                        <img
+                                            src="./assests/img/Photos.png"
+                                            alt="Image"
+                                            class="header__cart-img"
+                                        />
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5
+                                                    class="header__cart-item-name"
+                                                >
+                                                    Item's name
+                                                </h5>
+                                                <div
+                                                    class="header__cart-item-price-wrap"
+                                                >
+                                                    <span
+                                                        class="header__cart-item-price"
+                                                        >2.000.000đ</span
+                                                    >
+                                                    <span
+                                                        class="header__cart-item-multiply"
+                                                        >x</span
+                                                    >
+                                                    <span
+                                                        class="header__cart-item-quantity"
+                                                        >2</span
+                                                    >
+                                                </div>
+                                            </div>
+
+                                            <div class="header__cart-item-body">
+                                                <span
+                                                    class="header__cart-item-description"
+                                                >
+                                                    Phân loại: Bạc
+                                                </span>
+                                                <span
+                                                    class="header__cart-item-remove"
+                                                    >Xóa</span
+                                                >
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img
+                                            src="./assests/img/Photos.png"
+                                            alt="Image"
+                                            class="header__cart-img"
+                                        />
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5
+                                                    class="header__cart-item-name"
+                                                >
+                                                    Item's name
+                                                </h5>
+                                                <div
+                                                    class="header__cart-item-price-wrap"
+                                                >
+                                                    <span
+                                                        class="header__cart-item-price"
+                                                        >2.000.000đ</span
+                                                    >
+                                                    <span
+                                                        class="header__cart-item-multiply"
+                                                        >x</span
+                                                    >
+                                                    <span
+                                                        class="header__cart-item-quantity"
+                                                        >2</span
+                                                    >
+                                                </div>
+                                            </div>
+
+                                            <div class="header__cart-item-body">
+                                                <span
+                                                    class="header__cart-item-description"
+                                                >
+                                                    Phân loại: Bạc
+                                                </span>
+                                                <span
+                                                    class="header__cart-item-remove"
+                                                    >Xóa</span
+                                                >
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <a
+                                    href="#"
+                                    class="btn btn--primary header__cart-show-item"
+                                >
+                                    Xem giỏ hàng
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
