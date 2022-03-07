@@ -24,8 +24,15 @@
     position: relative;
 }
 
-.header__navbar-item-link {
-    padding-left: 2px;
+#navbar-sign-in,
+#navbar-sign-up {
+    display: none;
+    /* display: flex; */
+}
+
+#navbar-user {
+    /* display: none; */
+    display: flex;
 }
 
 .header__navbar-user {
@@ -103,10 +110,14 @@
 
 .header__navbar-item,
 .header__navbar-item-link {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: var(--white-color);
     text-decoration: none;
     font-weight: 300;
+}
+
+.header__navbar-item-link i {
+    margin-left: 4px;
 }
 
 .header__navbar-item:hover,
