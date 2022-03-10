@@ -727,6 +727,8 @@
     padding: 0;
     margin: 0;
     list-style: none;
+    overflow-y: scroll;
+    max-height: 30vh;
 }
 
 .header__cart-heading {
@@ -768,6 +770,13 @@
     font-weight: 500;
     color: var(--text-color);
     margin: 8px 0;
+    flex: 1;
+    text-align: left;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
 }
 
 .header__cart-item-price-wrap {
@@ -851,6 +860,17 @@
 }
 
 .category-item {
+    position: relative;
+}
+
+.category-item::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-top: 1px solid var(--border-color);
+    top: 100%;
+    left: 10%;
+    right: 10%;
 }
 .category-item--active .category-item__link {
     color: var(--primary-color);
@@ -923,6 +943,7 @@
     background-color: var(--white-color);
     padding: 4px 0 0 0;
     list-style: none;
+    z-index: 1;
 }
 
 .select-input__item a {
@@ -1165,4 +1186,99 @@
 
 .home-product-item__sale-off span:last-child {
     color: var(--white-color);
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination-item a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    margin: 12px;
+    padding: 4px 12px;
+}
+
+.pagination__link--current {
+    background-color: var(--primary-color);
+    color: var(--white-color) !important;
+}
+
+.pagination-home-product {
+    margin: 40px 0;
+}
+
+.footer__heading {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-top: 40px;
+}
+
+.footer__list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-item {
+    font-size: 1.4rem;
+}
+
+.footer-item__link {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--text-color);
+    margin: 8px 0;
+}
+
+.footer-item__link:hover {
+    color: var(--primary-color);
+}
+
+.footer__download {
+    display: flex;
+}
+
+.footer__download-qr {
+    padding: 4px;
+    width: 50%;
+}
+
+.footer__download-apps {
+    padding: 4px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.footer__download-apps {
+    cursor: pointer;
+}
+
+.footer__download-app-img {
+    width: 100%;
+}
+
+.footer__copyright::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    right: 10%;
+    border-top: 1px solid var(--border-color);
+}
+
+.footer__copyright {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+    color: var(--text-pale);
+    font-style: italic;
+    padding: 20px 0;
 }
