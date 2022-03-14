@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/font/fontawesome-free-6.0.0-web/css/all.min.css" />
     <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap&subset=vietnamese"
         rel="stylesheet" />
 </head>
@@ -18,8 +20,8 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="grid">
-                <nav class="header__navbar">
+            <div class="grid wide">
+                <nav class="header__navbar hide-on-mobile-tablet">
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item header__navbar-title--no-pointer header__navbar-item--separate"
                             id="header__navbar-item--qr-display">
@@ -138,7 +140,11 @@
                 </nav>
 
                 <div class="header-with-search">
-                    <div class="header__logo">
+                    <label for="mobile-search-checkbox" class="header__mobile-search">
+                        <i class="fas fa-search header__mobile-search-icon"></i>
+                    </label>
+
+                    <div class="header__logo hide-on-tablet">
                         <svg viewBox="0 0 192 65" class="header__logo-img">
                             <g fill-rule="evenodd">
                                 <path fill="#fff"
@@ -147,6 +153,8 @@
                             </g>
                         </svg>
                     </div>
+
+                    <input type="checkbox" hidden name="" id="mobile-search-checkbox">
 
                     <div class="header__search">
                         <div class="header__search-input-wrapper">
@@ -296,182 +304,6 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="header__cart-item">
-                                    <img src="./assets/img/Photos.png" alt="Image" class="header__cart-img" />
-                                    <div class="header__cart-item-info">
-                                        <div class="header__cart-item-head">
-                                            <h5 class="header__cart-item-name">
-                                                Item's name
-                                            </h5>
-                                            <div class="header__cart-item-price-wrap">
-                                                <span class="header__cart-item-price">2.000.000đ</span>
-                                                <span class="header__cart-item-multiply">x</span>
-                                                <span class="header__cart-item-quantity">2</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="header__cart-item-body">
-                                            <span class="header__cart-item-description">
-                                                Phân loại: Bạc
-                                            </span>
-                                            <span class="header__cart-item-remove">Xóa</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="header__cart-item">
-                                    <img src="./assets/img/Photos.png" alt="Image" class="header__cart-img" />
-                                    <div class="header__cart-item-info">
-                                        <div class="header__cart-item-head">
-                                            <h5 class="header__cart-item-name">
-                                                Item's name
-                                            </h5>
-                                            <div class="header__cart-item-price-wrap">
-                                                <span class="header__cart-item-price">2.000.000đ</span>
-                                                <span class="header__cart-item-multiply">x</span>
-                                                <span class="header__cart-item-quantity">2</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="header__cart-item-body">
-                                            <span class="header__cart-item-description">
-                                                Phân loại: Bạc
-                                            </span>
-                                            <span class="header__cart-item-remove">Xóa</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="header__cart-item">
-                                    <img src="./assets/img/Photos.png" alt="Image" class="header__cart-img" />
-                                    <div class="header__cart-item-info">
-                                        <div class="header__cart-item-head">
-                                            <h5 class="header__cart-item-name">
-                                                Item's name
-                                            </h5>
-                                            <div class="header__cart-item-price-wrap">
-                                                <span class="header__cart-item-price">2.000.000đ</span>
-                                                <span class="header__cart-item-multiply">x</span>
-                                                <span class="header__cart-item-quantity">2</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="header__cart-item-body">
-                                            <span class="header__cart-item-description">
-                                                Phân loại: Bạc
-                                            </span>
-                                            <span class="header__cart-item-remove">Xóa</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="header__cart-item">
-                                    <img src="./assets/img/Photos.png" alt="Image" class="header__cart-img" />
-                                    <div class="header__cart-item-info">
-                                        <div class="header__cart-item-head">
-                                            <h5 class="header__cart-item-name">
-                                                Item's name
-                                            </h5>
-                                            <div class="header__cart-item-price-wrap">
-                                                <span class="header__cart-item-price">2.000.000đ</span>
-                                                <span class="header__cart-item-multiply">x</span>
-                                                <span class="header__cart-item-quantity">2</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="header__cart-item-body">
-                                            <span class="header__cart-item-description">
-                                                Phân loại: Bạc
-                                            </span>
-                                            <span class="header__cart-item-remove">Xóa</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="header__cart-item">
-                                    <img src="./assets/img/Photos.png" alt="Image" class="header__cart-img" />
-                                    <div class="header__cart-item-info">
-                                        <div class="header__cart-item-head">
-                                            <h5 class="header__cart-item-name">
-                                                Item's name
-                                            </h5>
-                                            <div class="header__cart-item-price-wrap">
-                                                <span class="header__cart-item-price">2.000.000đ</span>
-                                                <span class="header__cart-item-multiply">x</span>
-                                                <span class="header__cart-item-quantity">2</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="header__cart-item-body">
-                                            <span class="header__cart-item-description">
-                                                Phân loại: Bạc
-                                            </span>
-                                            <span class="header__cart-item-remove">Xóa</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="header__cart-item">
-                                    <img src="./assets/img/Photos.png" alt="Image" class="header__cart-img" />
-                                    <div class="header__cart-item-info">
-                                        <div class="header__cart-item-head">
-                                            <h5 class="header__cart-item-name">
-                                                Item's name
-                                            </h5>
-                                            <div class="header__cart-item-price-wrap">
-                                                <span class="header__cart-item-price">2.000.000đ</span>
-                                                <span class="header__cart-item-multiply">x</span>
-                                                <span class="header__cart-item-quantity">2</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="header__cart-item-body">
-                                            <span class="header__cart-item-description">
-                                                Phân loại: Bạc
-                                            </span>
-                                            <span class="header__cart-item-remove">Xóa</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="header__cart-item">
-                                    <img src="./assets/img/Photos.png" alt="Image" class="header__cart-img" />
-                                    <div class="header__cart-item-info">
-                                        <div class="header__cart-item-head">
-                                            <h5 class="header__cart-item-name">
-                                                Item's name
-                                            </h5>
-                                            <div class="header__cart-item-price-wrap">
-                                                <span class="header__cart-item-price">2.000.000đ</span>
-                                                <span class="header__cart-item-multiply">x</span>
-                                                <span class="header__cart-item-quantity">2</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="header__cart-item-body">
-                                            <span class="header__cart-item-description">
-                                                Phân loại: Bạc
-                                            </span>
-                                            <span class="header__cart-item-remove">Xóa</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="header__cart-item">
-                                    <img src="./assets/img/Photos.png" alt="Image" class="header__cart-img" />
-                                    <div class="header__cart-item-info">
-                                        <div class="header__cart-item-head">
-                                            <h5 class="header__cart-item-name">
-                                                Item's name
-                                            </h5>
-                                            <div class="header__cart-item-price-wrap">
-                                                <span class="header__cart-item-price">2.000.000đ</span>
-                                                <span class="header__cart-item-multiply">x</span>
-                                                <span class="header__cart-item-quantity">2</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="header__cart-item-body">
-                                            <span class="header__cart-item-description">
-                                                Phân loại: Bạc
-                                            </span>
-                                            <span class="header__cart-item-remove">Xóa</span>
-                                        </div>
-                                    </div>
-                                </li>
                             </ul>
 
                             <a href="#" class="btn btn--primary header__cart-show-item">
@@ -481,12 +313,20 @@
                     </div>
                 </div>
             </div>
+
+            <ul class="header__sort-bar">
+                <li class="header__sort-item"><a href="#" class="header__sort-link">Liên quan</a></li>
+                <li class="header__sort-item"><a href="#" class="header__sort-link header__sort-link--active">Mới
+                        nhất</a></li>
+                <li class="header__sort-item"><a href="#" class="header__sort-link">Bán chạy</a></li>
+                <li class="header__sort-item"><a href="#" class="header__sort-link">Giá</a></li>
+            </ul>
         </header>
 
         <div class="wrapper__container">
-            <div class="grid">
-                <div class="grid__row padding-top">
-                    <div class="grid__column-2">
+            <div class="grid wide">
+                <div class="row padding-top">
+                    <div class="col l-2 m-0 s-0">
                         <nav class="category">
                             <h3 class="category__heading">
                                 <i class="fas fa-list category__heading-icon"></i>
@@ -512,8 +352,8 @@
                         </nav>
                     </div>
 
-                    <div class="grid__column-10">
-                        <div class="home-filter">
+                    <div class="col l-10 m-12 s-12">
+                        <div class="home-filter hide-on-mobile-tablet">
                             <span class="home-filter__label">
                                 Sắp xếp theo
                             </span>
@@ -562,9 +402,24 @@
                             </div>
                         </div>
 
+                        <nav class="mobile-category hide-on-pc hide-on-tablet">
+                            <ul class="mobile-category__list">
+                                <li class="mobile-category__item"><a href="#" class="mobile-category__link">Dụng cụ &
+                                        Thiết bị tiện ích</a></li>
+                                <li class="mobile-category__item"><a href="#" class="mobile-category__link">Dụng cụ &
+                                        Thiết bị tiện ích</a></li>
+                                <li class="mobile-category__item"><a href="#" class="mobile-category__link">Dụng cụ &
+                                        Thiết bị tiện ích</a></li>
+                                <li class="mobile-category__item"><a href="#" class="mobile-category__link">Dụng cụ &
+                                        Thiết bị tiện ích</a></li>
+                                <li class="mobile-category__item"><a href="#" class="mobile-category__link">Dụng cụ &
+                                        Thiết bị tiện ích</a></li>
+                            </ul>
+                        </nav>
+
                         <div class="home-product">
-                            <div class="grid__row">
-                                <div class="grid__column-2-4">
+                            <div class="row sm-gutter">
+                                <div class="col l-2-4 m-4 s-6">
                                     <div class="home-product-item">
                                         <div class="home-product-item__img" style="
                                                     background-image: url(./assets/img/Photos.png);
@@ -611,7 +466,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 s-6">
                                     <div class="home-product-item">
                                         <div class="home-product-item__img" style="
                                                     background-image: url(./assets/img/Photos.png);
@@ -658,7 +513,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 s-6">
                                     <div class="home-product-item">
                                         <div class="home-product-item__img" style="
                                                     background-image: url(./assets/img/Photos.png);
@@ -705,7 +560,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 s-6">
                                     <div class="home-product-item">
                                         <div class="home-product-item__img" style="
                                                     background-image: url(./assets/img/Photos.png);
@@ -752,7 +607,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 s-6">
                                     <div class="home-product-item">
                                         <div class="home-product-item__img" style="
                                                     background-image: url(./assets/img/Photos.png);
@@ -799,7 +654,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 s-6">
                                     <div class="home-product-item">
                                         <div class="home-product-item__img" style="
                                                     background-image: url(./assets/img/Photos.png);
@@ -846,7 +701,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 s-6">
                                     <div class="home-product-item">
                                         <div class="home-product-item__img" style="
                                                     background-image: url(./assets/img/Photos.png);
@@ -893,7 +748,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 s-6">
                                     <div class="home-product-item">
                                         <div class="home-product-item__img" style="
                                                     background-image: url(./assets/img/Photos.png);
@@ -940,7 +795,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 s-6">
                                     <div class="home-product-item">
                                         <div class="home-product-item__img" style="
                                                     background-image: url(./assets/img/Photos.png);
@@ -987,7 +842,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 s-6">
                                     <div class="home-product-item">
                                         <div class="home-product-item__img" style="
                                                     background-image: url(./assets/img/Photos.png);
@@ -1034,7 +889,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 s-6">
                                     <div class="home-product-item">
                                         <div class="home-product-item__img" style="
                                                     background-image: url(./assets/img/Photos.png);
@@ -1081,7 +936,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 s-6">
                                     <div class="home-product-item">
                                         <div class="home-product-item__img" style="
                                                     background-image: url(./assets/img/Photos.png);
@@ -1164,9 +1019,9 @@
         </div>
 
         <footer class="footer">
-            <div class="grid">
-                <div class="grid__row">
-                    <div class="grid__column-2-4">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-2-4 m-4 s-6">
                         <h3 class="footer__heading">Chăm sóc khách hàng</h3>
                         <ul class="footer__list">
                             <li class="footer-item">
@@ -1180,7 +1035,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 s-6">
                         <h3 class="footer__heading">Về Shop</h3>
                         <ul class="footer__list">
                             <li class="footer-item">
@@ -1194,10 +1049,10 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 s-6">
                         <h3 class="footer__heading">Danh mục</h3>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 s-6">
                         <h3 class="footer__heading">Theo dõi</h3>
                         <ul class="footer__list">
                             <li class="footer-item">
@@ -1217,7 +1072,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 s-6 m-o-4">
                         <h3 class="footer__heading">
                             Vào cửa hàng trên ứng dụng
                         </h3>
@@ -1230,10 +1085,9 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="grid__row">
-                    <p class="footer__copyright">Copyright</p>
-                </div>
+            </div>
+            <div class="footer__copyright">
+                <p class="footer__copyright-text">Copyright</p>
             </div>
         </footer>
     </div>
